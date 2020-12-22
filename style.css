@@ -1,20 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+/* 팝업창 */
+
+:root {
+  --primary: #333;
+  --accent: #fd7272;
+  --accent2: #38ada9;
+  --gray-dark: #5d5d5d;
+  --gray-mid: #808080;
+  --gray-light: #e0e0e0;
+}
 
 .popup {
-  width: 600px;
-  height: 400px;
+  width: 1100px;
+  height: 800px;
   background: #fff;
-  border-radius: 20px;
   position: absolute;
+  border-radius: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+}
+.popup .face_left {
+  width: 214px;
+  margin-top: 20%;
+  /* margin-bottom: 20px; */
+  /* padding: 0 50px; */
+  /* border-radius: 50px; */
+  /* background: red; */
+}
+
+.popup .sub_title {
+  padding-left: 160px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background: blue; */
+  padding-left: 150px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.logos li {
+  width: 50px;
+}
+
+.logo_img {
+  margin: 0 15px;
+  /* background: red; */
+}
+.popup p a {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #3c3c3c;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.popup h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.popup .font_1 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.popup h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+/* right */
+.popup h4 {
 }
 
 /* 홈페이지 창 */
 
 body {
   background: #3c3c3c;
+  /* position: relative; */
 }
 
 .container {
@@ -42,7 +122,7 @@ body {
 }
 
 .search_area {
-  background: red;
+  /* background: red; */
   position: relative;
 }
 
